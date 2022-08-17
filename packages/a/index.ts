@@ -1,3 +1,1 @@
-export default function a (isBig=false) {
-  return isBig? "A": "a";
-}
+export const a = (_=false)=> _? "A": "a";

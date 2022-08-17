@@ -1,5 +1,2 @@
-import a from "@amplify-jest-test/a";
-
-export default function b (isBig=false) {
-  return a(isBig) + (isBig? "B" : "b");
-}
+import { a } from "@amplify-jest-test/a";
+export const b = (isBig=false)  => a(isBig) + (isBig? "B" : "b");

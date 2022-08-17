@@ -1,6 +1,4 @@
 {
   "name": "@amplify-jest-test/a",
-  "version": "1.0.0",
-  "private": false,
-  "dependencies": {}
+  "private": false
 }

@@ -1,4 +1,4 @@
-import b from "../"
+import { b } from ".."
 
 describe('b', () => {
   it('b', () => {
