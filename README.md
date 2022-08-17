@@ -1,1 +1,0 @@
-"# amplify-jest-test" 
