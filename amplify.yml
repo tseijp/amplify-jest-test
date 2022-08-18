@@ -44,7 +44,7 @@ applications:
           - ../b/node_modules/**/*
           - ./node_modules/**/*
           - ../../node_modules/**/*
-    appRoot: ./packages/storybook
+    appRoot: ./packages/docusaurus
   - frontend:
       phases:
         preBuild:

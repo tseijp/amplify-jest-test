@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: '@amplify-jest-test/docusaurus',
+  tagline: 'Docusaurus are cool',
+  url: 'https://main.d3sui07a526fk3.amplifyapp.com/',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -19,12 +19,12 @@ const config = {
     docs: {
       path: '../../packages/',
       routeBasePath: 'packages',
-      include: ['*.{md, mdx}', '*/*.{md, mdx}'],
+      include: ['a/readme/**/*.{md, mdx}', 'b/readme/**/*.{md, mdx}'],
     },
     blog: {
       path: '../../articles/',
       routeBasePath: 'articles',
-      include: ['*.{md, mdx}', '*/*.{md, mdx}'],
+      include: ['*.{md, mdx}', '**/*.{md, mdx}'],
       blogSidebarCount:  'ALL',
       blogSidebarTitle:  'All posts',
       postsPerPage: 10,
@@ -47,13 +47,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/packages', label: 'Packages', position: 'left'},
+          {to: '/articles', label: 'Articles', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
