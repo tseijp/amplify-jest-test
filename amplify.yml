@@ -35,7 +35,7 @@ applications:
             - cd packages/docusaurus
             - npx docusaurus build
       artifacts:
-        baseDirectory: ./storybook-static
+        baseDirectory: ./build
         files:
           - '**/*'
       cache:
