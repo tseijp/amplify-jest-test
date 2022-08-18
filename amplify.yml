@@ -32,6 +32,30 @@ applications:
             - ls node_modules
         build:
           commands:
+            - cd packages/docusaurus
+            - npx docusaurus build
+      artifacts:
+        baseDirectory: ./storybook-static
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - ../a/node_modules/**/*
+          - ../b/node_modules/**/*
+          - ./node_modules/**/*
+          - ../../node_modules/**/*
+    appRoot: ./packages/storybook
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - cd ../..
+            - npm install -g lerna
+            - yarn install --frozen-lockfile
+            - lerna bootstrap --no-ci
+            - ls node_modules
+        build:
+          commands:
             - cd packages/storybook
             - npx storybook build
       artifacts:

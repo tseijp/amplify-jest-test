@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "storybook": "cd packages/storybook && yarn storybook",
-    "docusaurus": "cd packages/storybook && yarn start"
+    "docusaurus": "cd packages/docusaurus && yarn start"
   },
   "devDependencies": {
     "@types/jest": "^28.1.2",

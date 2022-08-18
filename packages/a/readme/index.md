@@ -1,0 +1,1 @@
+# @amplify-jest-test/a is cool
