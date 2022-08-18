@@ -25,10 +25,14 @@ applications:
       phases:
         preBuild:
           commands:
+            - cd ../..
+            - npm install -g lerna
             - yarn install --frozen-lockfile
+            - lerna bootstrap --no-ci
             - ls node_modules
         build:
           commands:
+            - cd packages/storybook
             - npx storybook build
       artifacts:
         baseDirectory: ./storybook-static

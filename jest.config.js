@@ -15,5 +15,5 @@ module.exports = {
   coverageDirectory: '<rootDir>/coverage/',
   coverageReporters: ['json', 'html', 'lcov', 'text', 'text-summary', 'clover'],
   coverageThreshold: {global: {statements: 95, functions: 95, branches: 95, lines: 95}},
-  collectCoverageFrom: ['./packages/**/*.ts'], // , '!**/index*'
+  collectCoverageFrom: ['./packages/a/**/*.ts', './packages/b/**/*.ts', '!**/stories/*'], // , '!**/index*'
 };
