@@ -1,10 +1,14 @@
 {
   "name": "@amplify-jest-test/root",
   "private": true,
+  "scripts": {
+    "storybook": "cd packages/storybook && yarn storybook",
+    "docusaurus": "cd packages/storybook && yarn start"
+  },
   "devDependencies": {
     "@types/jest": "^28.1.2",
-    "lerna": "5.1.1",
     "jest": "^28.1.1",
+    "lerna": "5.1.1",
     "ts-jest": "^28.0.5",
     "typescript": "^4.6.4"
   },
@@ -12,3 +16,5 @@
     "packages/*"
   ]
 }
+
+

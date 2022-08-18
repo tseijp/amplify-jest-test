@@ -21,3 +21,23 @@ applications:
           - ./packages/b/node_modules/**/*
           - ./node_modules/**/*
     appRoot: .
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn install --frozen-lockfile
+            - ls node_modules
+        build:
+          commands:
+            - npx storybook build
+      artifacts:
+        baseDirectory: ./storybook-static
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - ../a/node_modules/**/*
+          - ../b/node_modules/**/*
+          - ./node_modules/**/*
+          - ../../node_modules/**/*
+    appRoot: ./packages/storybook
